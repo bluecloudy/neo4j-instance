@@ -160,9 +160,9 @@ function createDatabase {
             (( "$type" == "community" || "$type" == "enterprise")) && neo4jType=$type;
             ;;
         v) version=$OPTARG;
-            if [[ $version =~ ^[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+$ ]]; then
+            #if [[ $version =~ ^[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+$ ]]; then
                 currentVersion=$version
-            fi
+            #fi
             ;;
         *) usage;
             ;;
